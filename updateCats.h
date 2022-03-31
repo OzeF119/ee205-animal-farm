@@ -16,7 +16,7 @@ extern int updateCatName(int index, const char newName[]);
 
 extern void fixCat(int index);
 
-extern int updateCatWeight(int index, float newWeight);
+extern int updateCatWeight(int index, Weight newWeight);
 
 extern void updateCatCollar1(int index, enum Color newCollarColor1);
 

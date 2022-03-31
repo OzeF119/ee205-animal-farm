@@ -16,7 +16,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-int isValid(const char checkName[],float checkWeight){
+int isValid(const char checkName[],Weight checkWeight){
     if(numCats >= MAX_CATS) {
         fprintf( stderr, "%s: [%d] is greater than [%d].\n", PROGRAM_NAME, numCats, MAX_CATS );
         return 1;
@@ -41,7 +41,7 @@ int isValid(const char checkName[],float checkWeight){
     }
     return 0;
 }
-int addCats(const char addName[],enum gender addGender,enum breed addBreed,bool addIsFixed,float addWeight, enum Color addcollarColor1, enum Color addcollarColor2, unsigned long long addlicense) {
+int addCats(const char addName[],enum gender addGender,enum breed addBreed,bool addIsFixed,Weight addWeight, enum Color addcollarColor1, enum Color addcollarColor2, unsigned long long addlicense) {
     if(isValid(addName, addWeight) != 0) {
         return 1;
     }

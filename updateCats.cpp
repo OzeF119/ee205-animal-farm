@@ -36,7 +36,7 @@ void fixCat(int index){
     cat[index].isFixed = true;
 }
 
-int updateCatWeight(int index, float newWeight){
+int updateCatWeight(int index, Weight newWeight){
     if(newWeight <= 0) {
         fprintf( stderr, "%s: Cat weight [%f] must be greater than or equal to zero.\n", PROGRAM_NAME, newWeight ) ;
         return 1;

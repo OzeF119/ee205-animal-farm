@@ -15,6 +15,8 @@
 #define MAX_CATS 1024
 #define MAX_CAT_NAME 50
 
+typedef float Weight;
+
 enum gender{UNKNOWN_GENDER,MALE,FEMALE};
 enum breed{UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
 enum Color{BLACK, WHITE, RED, BLUE, GREEN, PINK, UNKNOWN_COLOR};
@@ -22,7 +24,7 @@ enum Color{BLACK, WHITE, RED, BLUE, GREEN, PINK, UNKNOWN_COLOR};
 struct Cat {
     char name[MAX_CAT_NAME];
     bool isFixed;
-    float weight;
+    Weight weight;
     enum gender catGender;
     enum breed catBreed;
     enum Color collarColor1;

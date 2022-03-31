@@ -11,6 +11,6 @@
 
 #pragma once
 
-extern int isValid(const char checkName[],float checkWeight);
+extern int isValid(const char checkName[],Weight checkWeight);
 
-extern int addCats(const char addName[],enum gender addGender,enum breed addBreed,bool addIsFixed,float addWeight,enum Color addcollarColor1, enum Color addcollarColor2, unsigned long long addlicense);
+extern int addCats(const char addName[],enum gender addGender,enum breed addBreed,bool addIsFixed,Weight addWeight,enum Color addcollarColor1, enum Color addcollarColor2, unsigned long long addlicense);
