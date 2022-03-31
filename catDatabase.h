@@ -16,6 +16,7 @@
 #define MAX_CAT_NAME 50
 
 typedef float Weight;
+typedef int NumCats;
 
 enum gender{UNKNOWN_GENDER,MALE,FEMALE};
 enum breed{UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
@@ -34,6 +35,6 @@ struct Cat {
 
 extern struct Cat cat[];
 
-extern int numCats;
+extern NumCats numCats;
 
 extern void initializeDatabase();

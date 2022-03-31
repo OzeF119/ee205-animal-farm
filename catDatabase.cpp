@@ -15,7 +15,7 @@
 #include <string.h>
 #include <stdbool.h>
 
-int numCats;
+NumCats numCats;
 struct Cat cat[MAX_CATS];
 
 void initializeDatabase() {
