@@ -8,12 +8,13 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-/*
+
 #include "Cat.h"
 #include "config.h"
 #include "catDatabase.h"
 #include "reportCats.h"
 
+#include <cassert>
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
@@ -28,7 +29,7 @@ int numCats = 0;
 extern bool validateDatabase() {
     int validCats = 0;
     for(Cat* checkCat = catHeadPointer; checkCat != nullptr; checkCat = checkCat->next){
-        if(!checkCat->validate()){
+        if(checkCat->validate() == 1){
             return false;
         }
         Cat* catDetected = findCatByName(checkCat->getName());
@@ -43,4 +44,5 @@ extern bool validateDatabase() {
     }
     return true;
 }
- */
+
+

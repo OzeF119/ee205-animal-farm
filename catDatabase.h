@@ -8,35 +8,20 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
+
 #pragma once
 #include <stdbool.h>
 #define MAX_CATS 1024
 #define MAX_CAT_NAME 50
-
-
-
-
-
-/*
-#pragma once
-#include <stdbool.h>
 
 #include "Cat.h"
 #include "reportCats.h"
-
-#define MAX_CATS 1024
-#define MAX_CAT_NAME 50
-
-typedef float Weight;
-
-enum gender{UNKNOWN_GENDER,MALE,FEMALE};
-enum breed{UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
-
+#include "config.h"
 
 extern Cat* catHeadPointer;
 extern int numCats;
 
 extern bool validateDatabase();
-*/
+
 
 

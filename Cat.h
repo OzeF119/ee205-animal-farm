@@ -22,8 +22,10 @@ protected:
     enum gender catGender;
     bool isCatFixed;
     Weight weight;
+
 public:
     Cat* next;
+
 private:
     void toNull();
 
