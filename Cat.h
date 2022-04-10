@@ -11,13 +11,15 @@
 
 #pragma once
 #include "catDatabase.h"
+#include "reportCats.h"
+#include <cstring>
 
 class Cat {
 protected:
     char name[MAX_CAT_NAME];
     enum breed catBreed;
     enum gender catGender;
-    bool isFixed;
+    bool isCatFixed;
     Weight weight;
 public:
     Cat* next;
@@ -26,7 +28,7 @@ private:
 
 public:
     Cat();
-    Cat( const char *newName, const gender newGender, const breed newBreed, const Weight newWeight );
+    Cat(const char *newName, const gender newGender, const breed newBreed, const Weight newWeight );
     ~Cat();
 
 public:
@@ -34,14 +36,14 @@ public:
     void setName(const char* newName);
     gender getGender();
     breed getBreed();
-    bool isCatFixed();
+    bool isFixed();
     void fixedCat();
     Weight getWeight();
     void setWeight(Weight newWeight);
 
 public:
     bool print();
-    void validate();
+    bool validate();
     void setGender(gender newGender);
     void setBreed(breed newBreed);
     bool validateGender(const gender newGender);
