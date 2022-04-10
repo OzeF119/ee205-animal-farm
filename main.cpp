@@ -27,8 +27,8 @@
 using namespace std;
 
 int main() {
-    cout << "Starting " << PROGRAM_NAME << endl ;
-    cout << "Done with " << PROGRAM_NAME << endl ;
+    cout << "Starting " << PROGRAM_TITLE << endl ;
+    cout << "Done with " << PROGRAM_TITLE << endl ;
     /*
     initializeDatabase();
 

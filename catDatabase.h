@@ -22,6 +22,7 @@ enum gender{UNKNOWN_GENDER,MALE,FEMALE};
 enum breed{UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
 enum Color{BLACK, WHITE, RED, BLUE, GREEN, PINK, UNKNOWN_COLOR};
 
+/*
 struct Cat {
     char name[MAX_CAT_NAME];
     bool isFixed;
@@ -38,3 +39,4 @@ extern struct Cat cat[];
 extern NumCats numCats;
 
 extern void initializeDatabase();
+*/
