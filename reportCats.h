@@ -16,7 +16,7 @@ extern const char* isFixedToString(bool isFixed);
 extern const char* genderToString(enum gender theGender);
 
 extern const char* breedToString(enum breed theBreed);
-
+/*
 extern const char* collarToString(enum Color collar);
 
 extern int printCat(int catIndex);
@@ -24,4 +24,4 @@ extern int printCat(int catIndex);
 extern int printAllCats();
 
 extern int findCat(const char scoutName[]);
-
+*/

@@ -24,7 +24,7 @@ protected:
 public:
     Cat* next;
 private:
-    void initializeDatabase();
+    void toNull();
 
 public:
     Cat();

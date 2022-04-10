@@ -24,7 +24,7 @@ using namespace std;
 
 int fail = 0;
 
-void Cat::initializeDatabase() {
+void Cat::toNull() {
     memset( name, 0, MAX_CAT_NAME );
     isCatFixed = false;
     weight = 0;
@@ -34,7 +34,7 @@ void Cat::initializeDatabase() {
 }
 
 Cat::Cat() {
-    initializeDatabase();
+    toNull();
 }
 
 Cat::Cat(const char *newName, const gender newGender, const breed newBreed, const Weight newWeight ) {
@@ -42,11 +42,11 @@ Cat::Cat(const char *newName, const gender newGender, const breed newBreed, cons
     setGender(newGender);
     setBreed(newBreed);
     setWeight(newWeight);
-    assert( validate() ) ;
+    assert( validate() ) ;  //terminates program is validate() fails
 }
 
 Cat::~Cat() {
-    initializeDatabase();
+    toNull();
 }
 
 //Getters

@@ -37,6 +37,5 @@ struct Cat {
 extern struct Cat cat[];
 
 extern NumCats numCats;
-
-extern void initializeDatabase();
 */
+//extern void initializeDatabase();

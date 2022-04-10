@@ -16,14 +16,9 @@
 #include <stdbool.h>
 
 NumCats numCats;
-struct Cat cat[MAX_CATS];
+
 
 void Cat::initializeDatabase() {
-        numCats = 0;
-        memset( name, 0, MAX_CAT_NAME );
-        cat[i].isFixed = false;
-        cat[i].weight = 0;
-        cat[i].catGender = UNKNOWN_GENDER;
-        cat[i].catBreed = UNKNOWN_BREED;
+
 }
 */
