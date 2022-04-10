@@ -15,6 +15,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+#include <iostream>
 
 #include "catDatabase.h"
 #include "addCats.h"
@@ -23,8 +24,12 @@
 #include "deleteCats.h"
 #include "config.h"
 
+using namespace std;
 
 int main() {
+    cout << "Starting " << PROGRAM_NAME << endl ;
+    cout << "Done with " << PROGRAM_NAME << endl ;
+    /*
     initializeDatabase();
 
     addCats( "Loki", MALE, PERSIAN, true, 8.5, BLACK, WHITE, 101 ) ;
@@ -65,6 +70,7 @@ int main() {
     deleteAllCats();
     printAllCats();
     printf("\n");
+     */
 }
 
 

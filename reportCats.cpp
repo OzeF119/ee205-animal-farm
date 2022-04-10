@@ -8,7 +8,7 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-
+/*
 #include "config.h"
 #include "catDatabase.h"
 #include "addCats.h"
@@ -85,5 +85,5 @@ int findCat(const char scoutName[]) {
     printf("There is no cat with the name %s\n", scoutName);
     return -1;
 }
-
+*/
 

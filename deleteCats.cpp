@@ -8,7 +8,7 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-
+/*
 #include "config.h"
 #include "catDatabase.h"
 #include "addCats.h"
@@ -48,4 +48,4 @@ void deleteCat( int index ) {
         }
     }
 }
-
+*/

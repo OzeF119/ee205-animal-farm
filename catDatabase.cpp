@@ -8,7 +8,7 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-
+/*
 #include "config.h"
 #include "catDatabase.h"
 #include <stdio.h>
@@ -31,3 +31,4 @@ void initializeDatabase() {
         cat[i].license = 0;
     }
 }
+*/

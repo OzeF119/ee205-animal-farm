@@ -9,7 +9,7 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 
-
+/*
 #include "config.h"
 #include "catDatabase.h"
 #include "addCats.h"
@@ -58,5 +58,5 @@ void updateLicense(int index, unsigned long long newLicense) {
     cat[index].license = newLicense;
 }
 
-
+*/
 
