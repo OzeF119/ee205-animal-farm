@@ -72,7 +72,7 @@ Weight Cat::getWeight() {
 
 
 bool Cat::print() {
-    assert( validate() ) ;
+    //assert( validate() ) ;
 
     cout << setw(80) << setfill('=') << "" << endl;
     cout << setfill(' ');
@@ -136,17 +136,30 @@ bool Cat::validateWeight(const Weight newWeight) {
 }
 
 bool Cat::validate() {
+    //cout << "fail is " << fail << endl ; (debug code)
     validateWeight(weight);
     validateBreed(catBreed);
     validateGender(catGender);
     validateName(name);
-    if(fail = 1) {
+    if(fail == 1) {
         cout << "Error: Cat is not valid" << endl;
         return 1;
     }
     return true;
-}
+} /*
+bool Cat::validate() {
+    try {
+        validateName( name ) ;
+        validateGender( catGender ) ;
+        validateBreed( catBreed ) ;
+        validateWeight( weight ) ;
+    } catch (exception const& e) {
+        cout << e.what() << endl ;
+        return false ;
+    }
 
+    return true;
+} */
 //Setters
 
 void Cat::setName(const char *newName) {
