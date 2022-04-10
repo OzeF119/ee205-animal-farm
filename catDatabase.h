@@ -8,34 +8,35 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-
-
 #pragma once
 #include <stdbool.h>
 #define MAX_CATS 1024
 #define MAX_CAT_NAME 50
 
+
+
+
+
+/*
+#pragma once
+#include <stdbool.h>
+
+#include "Cat.h"
+#include "reportCats.h"
+
+#define MAX_CATS 1024
+#define MAX_CAT_NAME 50
+
 typedef float Weight;
-typedef int NumCats;
 
 enum gender{UNKNOWN_GENDER,MALE,FEMALE};
 enum breed{UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
-enum Color{BLACK, WHITE, RED, BLUE, GREEN, PINK, UNKNOWN_COLOR};
 
-/*
-struct Cat {
-    char name[MAX_CAT_NAME];
-    bool isFixed;
-    Weight weight;
-    enum gender catGender;
-    enum breed catBreed;
-    enum Color collarColor1;
-    enum Color collarColor2;
-    unsigned long long license;
-};
 
-extern struct Cat cat[];
+extern Cat* catHeadPointer;
+extern int numCats;
 
-extern NumCats numCats;
+extern bool validateDatabase();
 */
-//extern void initializeDatabase();
+
+

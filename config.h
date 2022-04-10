@@ -15,3 +15,8 @@
 
 #define PROGRAM_TITLE "Animal Farm 2"
 
+enum gender{UNKNOWN_GENDER,MALE,FEMALE};
+
+enum breed{UNKNOWN_BREED, MAINE_COON, MANX, SHORTHAIR, PERSIAN, SPHYNX};
+
+typedef float Weight;

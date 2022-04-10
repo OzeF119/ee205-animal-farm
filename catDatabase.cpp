@@ -9,16 +9,38 @@
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 /*
+#include "Cat.h"
 #include "config.h"
 #include "catDatabase.h"
+#include "reportCats.h"
+
+#include <iostream>
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 
-NumCats numCats;
+using namespace std;
 
+Cat* catHeadPointer = nullptr;
 
-void Cat::initializeDatabase() {
+int numCats = 0;
 
+extern bool validateDatabase() {
+    int validCats = 0;
+    for(Cat* checkCat = catHeadPointer; checkCat != nullptr; checkCat = checkCat->next){
+        if(!checkCat->validate()){
+            return false;
+        }
+        Cat* catDetected = findCatByName(checkCat->getName());
+        if(catDetected != checkCat) {
+            cout << PROGRAM_NAME ": Warning: Two cats have the name << checkCat->etName() " << endl;
+        }
+        validCats++;
+    }
+    if(validCats != numCats) {
+        cout << PROGRAM_NAME << ": Error: number of cats " << numCats << " does not equal the amount of valid cats " << validCats << endl;
+        return 1;
+    }
+    return true;
 }
-*/
+ */

@@ -17,20 +17,9 @@
 #include <string.h>
 #include <stdbool.h>
 
-const char* collarToString(enum Color collar){
-    switch(collar){
-        case BLACK : return "Black";
-        case WHITE : return "White";
-        case RED   : return "Red";
-        case BLUE  : return "Blue";
-        case GREEN : return "Green";
-        case PINK  : return "Pink";
-        case UNKNOWN_COLOR : return "Unknown Color";
-        default: return "Null";
-    }
-}
-const char* breedToString(enum breed theBreed){
-    switch(theBreed){
+
+const char* breedToString(enum breed catBreed){
+    switch(catBreed){
         case MAINE_COON : return "Maine Coon";
         case MANX : return "Manx";
         case SHORTHAIR : return "Shorthair";
@@ -42,48 +31,12 @@ const char* breedToString(enum breed theBreed){
 }
 
 
-const char* genderToString(enum gender theGender){
-    switch(theGender){
+const char* genderToString(enum gender catGender){
+    switch(catGender){
         case MALE : return "Male";
         case FEMALE : return "Female";
         case UNKNOWN_GENDER : return "Unknown Gender";
         default: return "Null";
     }
 }
-
-const char* isFixedToString(bool isFixed){
-    if(isFixed == 1){
-        return "true";
-    }
-    else
-        return "false";
-}
-
-/*
-int printCat(int catIndex){
-    if(catIndex < 0 || catIndex > MAX_CATS) {
-        printf("animalFarm1: Bad cat [%d]\n", catIndex);
-        return 1;
-    }
-    printf("cat index = [%u] name=[%s] gender=[%s] breed=[%s] isFixed=[%s] weight=[%f] collarColor1=[%s] collarColor2=[%s] license=[%lld]\n", catIndex, cat[catIndex].name, genderToString(cat[catIndex].catGender), breedToString(cat[catIndex].catBreed), isFixedToString(cat[catIndex].isFixed), cat[catIndex].weight, collarToString(cat[catIndex].collarColor1), collarToString(cat[catIndex].collarColor2), cat[catIndex].license);
-    return 0;
-}
-
-int printAllCats(){
-    for(int i = 0; i < numCats; i++){
-        printCat(i);
-    }
-    return 1;
-}
-
-int findCat(const char scoutName[]) {
-    for(int i = 0; i <= numCats; i++){
-        if(strcmp(scoutName, cat[i].name) == 0){
-            return i;
-        }
-    }
-    printf("There is no cat with the name %s\n", scoutName);
-    return -1;
-}
-*/
 

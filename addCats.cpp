@@ -8,14 +8,22 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-/*
+
+#include <cassert>
+#include <iostream>
 #include "config.h"
 #include "catDatabase.h"
 #include "addCats.h"
-#include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
+#include "Cat.h"
 
+using namespace std;
+
+bool addCat(Cat* newCat) {
+    newCat->validate();
+    return false;
+}
+
+/*
 int isValid(const char checkName[],Weight checkWeight){
     if(numCats >= MAX_CATS) {
         fprintf( stderr, "%s: [%d] is greater than [%d].\n", PROGRAM_NAME, numCats, MAX_CATS );

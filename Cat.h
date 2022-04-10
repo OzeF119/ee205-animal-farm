@@ -13,6 +13,7 @@
 #include "catDatabase.h"
 #include "reportCats.h"
 #include <cstring>
+#include "config.h"
 
 class Cat {
 protected:

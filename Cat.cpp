@@ -10,6 +10,8 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include "Cat.h"
 #include "catDatabase.h"
+#include "reportCats.h"
+
 #include <cstring>
 #include <stdexcept>
 #include <iostream>
@@ -17,8 +19,7 @@
 #include <cassert>
 
 #define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
-/// @returns true if everything worked correctly. false if something goes
-/// wrong
+
 
 using namespace std;
 
@@ -72,7 +73,7 @@ Weight Cat::getWeight() {
 
 
 bool Cat::print() {
-    //assert( validate() ) ;
+    assert( validate() ) ;
 
     cout << setw(80) << setfill('=') << "" << endl;
     cout << setfill(' ');
@@ -141,25 +142,13 @@ bool Cat::validate() {
     validateBreed(catBreed);
     validateGender(catGender);
     validateName(name);
-    if(fail == 1) {
+    if (fail == 1) {
         cout << "Error: Cat is not valid" << endl;
         return 1;
     }
     return true;
-} /*
-bool Cat::validate() {
-    try {
-        validateName( name ) ;
-        validateGender( catGender ) ;
-        validateBreed( catBreed ) ;
-        validateWeight( weight ) ;
-    } catch (exception const& e) {
-        cout << e.what() << endl ;
-        return false ;
-    }
+}
 
-    return true;
-} */
 //Setters
 
 void Cat::setName(const char *newName) {
