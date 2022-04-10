@@ -22,6 +22,8 @@
 
 using namespace std;
 
+int fail = 0;
+
 void Cat::initializeDatabase() {
     memset( name, 0, MAX_CAT_NAME );
     isCatFixed = false;
@@ -88,14 +90,17 @@ bool Cat::print() {
 bool Cat::validateName(const char *newName){
     if(newName == nullptr) {
         cout << "Error: Name must be initialized " << endl ;
+        fail = 1;
         return 1;
     }
     if(strlen(newName) == 0) {
         cout << "Error: Name cannot be an empty string" << endl ;
+        fail = 1;
         return 1;
     }
     if(strlen(newName) >= MAX_CAT_NAME){
         cout << "Error: Name cannot be greater than " << MAX_CAT_NAME << endl ;
+        fail = 1;
         return 1;
     }
     return true;
@@ -104,6 +109,7 @@ bool Cat::validateName(const char *newName){
 bool Cat::validateGender(const gender newGender) {
     if(newGender == UNKNOWN_GENDER) {
         cout << "Error: Gender must be initialized " << endl ;
+        fail = 1;
         return 1;
     }
     return true;
@@ -112,6 +118,7 @@ bool Cat::validateGender(const gender newGender) {
 bool Cat::validateBreed(const breed newBreed){
     if(newBreed == UNKNOWN_BREED) {
         cout << "Error: Breed must be initialized" << endl ;
+        fail = 1;
         return 1;
     }
     return true;
@@ -120,17 +127,22 @@ bool Cat::validateBreed(const breed newBreed){
 bool Cat::validateWeight(const Weight newWeight) {
     if(newWeight <= 0) {
         cout << "Error: Weight cannot be equal to or less than zero" << endl ;
+        fail = 1;
         return 1;
     }
     return true;
 }
 
 bool Cat::validate() {
-    if(validateWeight(weight) == true && validateBreed(catBreed) == true && validateGender(catGender) == true && validateName(name) == true) {
-        return true;
+    validateWeight(weight);
+    validateBreed(catBreed);
+    validateGender(catGender);
+    validateName(name);
+    if(fail = 1) {
+        cout << "Error: Cat is not valid" << endl;
+        return 1;
     }
-    cout << "Error: Cat is not valid" << endl ;
-    return 1;
+    return true;
 }
 
 //Setters
