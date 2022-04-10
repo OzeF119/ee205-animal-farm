@@ -19,7 +19,7 @@
 using namespace std;
 
 bool addCat(Cat* newCat) {
-    assert(newCat != newCat);
+    assert( newCat != nullptr ) ;
     newCat->validate();
     assert(validateDatabase());
     newCat->next = catHeadPointer;

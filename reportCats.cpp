@@ -52,11 +52,11 @@ Cat* findCatByName(const char* name){
 }
 
 bool printAllCats(){
-    int numCats = 0;
+    int catV = 0;
     assert(validateDatabase());
     for(Cat* checkCat = catHeadPointer; checkCat != nullptr; checkCat = checkCat->next){
         checkCat->print();
-        numCats++;
+        catV++;
     }
     assert(validateDatabase());
     return true;

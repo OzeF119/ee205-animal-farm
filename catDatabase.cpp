@@ -29,7 +29,7 @@ int numCats = 0;
 extern bool validateDatabase() {
     int validCats = 0;
     for(Cat* checkCat = catHeadPointer; checkCat != nullptr; checkCat = checkCat->next){
-        if(checkCat->validate() == 1){
+        if(!checkCat->validate()){
             return false;
         }
         Cat* catDetected = findCatByName(checkCat->getName());
