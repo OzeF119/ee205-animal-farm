@@ -11,8 +11,7 @@
 
 #pragma once
 #include <stdbool.h>
-#define MAX_CATS 1024
-#define MAX_CAT_NAME 50
+
 
 #include "Cat.h"
 #include "reportCats.h"

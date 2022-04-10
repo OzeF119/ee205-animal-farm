@@ -17,3 +17,7 @@
 extern const char* genderToString(enum gender catGender);
 
 extern const char* breedToString(enum breed catBreed);
+
+extern Cat* findCatByName(const char* name);
+
+extern bool printAllCats();

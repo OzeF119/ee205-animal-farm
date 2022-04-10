@@ -13,9 +13,11 @@
 #include "catDatabase.h"
 #include "addCats.h"
 #include "reportCats.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
+#include <cassert>
 
 
 const char* breedToString(enum breed catBreed){
@@ -38,5 +40,25 @@ const char* genderToString(enum gender catGender){
         case UNKNOWN_GENDER : return "Unknown Gender";
         default: return "Null";
     }
+}
+
+Cat* findCatByName(const char* name){
+    for(Cat* checkCat = catHeadPointer; checkCat != nullptr; checkCat = checkCat->next) {
+        if(strcmp(name,checkCat->getName())==0){
+            return checkCat;
+        }
+    }
+    return nullptr;
+}
+
+bool printAllCats(){
+    int numCats = 0;
+    assert(validateDatabase());
+    for(Cat* checkCat = catHeadPointer; checkCat != nullptr; checkCat = checkCat->next){
+        checkCat->print();
+        numCats++;
+    }
+    assert(validateDatabase());
+    return true;
 }
 

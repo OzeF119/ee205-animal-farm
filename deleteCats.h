@@ -10,7 +10,9 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #pragma once
+#include "Cat.h"
+#include "config.h"
 
-extern void deleteAllCats();
+extern bool deleteAllCats();
 
-void deleteCat( int index );
+extern bool deleteCat(Cat* deleteThisCat);

@@ -10,10 +10,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #pragma once
-#include "catDatabase.h"
-#include "reportCats.h"
-#include <cstring>
 #include "config.h"
+
+#define MAX_CAT_NAME 50
+#define MAX_CATS 1024
 
 class Cat {
 protected:
