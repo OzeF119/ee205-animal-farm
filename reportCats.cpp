@@ -8,7 +8,7 @@
 /// @author Oze Farris <ofarris@hawaii.edu>
 /// @date   20_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
-/*
+
 #include "config.h"
 #include "catDatabase.h"
 #include "addCats.h"
@@ -59,7 +59,7 @@ const char* isFixedToString(bool isFixed){
         return "false";
 }
 
-
+/*
 int printCat(int catIndex){
     if(catIndex < 0 || catIndex > MAX_CATS) {
         printf("animalFarm1: Bad cat [%d]\n", catIndex);
