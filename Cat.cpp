@@ -42,6 +42,7 @@ Cat::Cat(const char *newName, const gender newGender, const breed newBreed, cons
     setGender(newGender);
     setBreed(newBreed);
     setWeight(newWeight);
+    assert( validate() ) ;
 }
 
 Cat::~Cat() {
@@ -71,7 +72,8 @@ Weight Cat::getWeight() {
 
 
 bool Cat::print() {
-    //assert( validate() ) ;
+    assert( validate() ) ;
+
     cout << setw(80) << setfill('=') << "" << endl;
     cout << setfill(' ');
     cout << left;
