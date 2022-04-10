@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //          University of Hawaii, College of Engineering
-/// @brief  Lab 08d - animal-farm-1-to-clion - EE 205 - Spr 2022
+/// @brief  Lab 10d - animal-farm-2 - EE 205 - Spr 2022
 //
 // Usage:  animalFarm1
 //
@@ -8,7 +8,7 @@
 // @verision 1.0
 //
 // @author Oze Farris <ofarris@hawaii.edu>
-// @date   08_20_2022
+// @date   10_April_2022
 ///////////////////////////////////////////////////////////////////////////////
 
 
