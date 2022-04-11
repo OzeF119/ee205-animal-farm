@@ -9,7 +9,7 @@
 /// @date   10_April_2022
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "config.h"
+
 #include "catDatabase.h"
 #include "deleteCats.h"
 
@@ -44,6 +44,7 @@ bool deleteCat(Cat* targetCat){
         return true;
     }
 }
+
 
 bool deleteAllCats(){
     while(catHeadPointer != nullptr){

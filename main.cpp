@@ -2,7 +2,7 @@
 //          University of Hawaii, College of Engineering
 /// @brief  Lab 10d - animal-farm-2 - EE 205 - Spr 2022
 //
-// Usage:  animalFarm1
+// Usage:  animalFarm2
 //
 // @file main.cpp
 // @verision 1.0
@@ -33,7 +33,9 @@ using namespace std;
 
 int main() {
     cout << "Starting " << PROGRAM_TITLE << endl ;
+
 /*
+//////////////////////////////Testing/Debug Code ///////////////////////////////
     Cat testCat =  Cat();
     assert(testCat.getName() != nullptr );
     assert(strcmp(testCat.getName(), "") == 0);
@@ -81,7 +83,7 @@ int main() {
     assert(testCat.validate());
     testCat.print();
 */
-    ///////////////////////////////////////////////////////////////////////
+////////////////////////////// Program Requirements ////////////////////////////////
 
     addCat( new Cat( "Loki", MALE, PERSIAN, 1.0 )) ;
     addCat( new Cat( "Milo", MALE, MANX , 1.1 )) ;
